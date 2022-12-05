@@ -1,0 +1,237 @@
+:root {
+   --primaryGreen400: #6acb4c;
+   --primaryGreen600: #2f7719;
+   --primaryGreen700: #325343;
+   --accentGray500: #626262;
+   --accentGray200: #dddddd;
+   --bgBlue900: #020015;
+}
+
+/* Keyframes */
+@keyframes scaleInFrom0 {
+   from {
+      transform: scale(1%);
+   }
+
+   to {
+      transform: scale(100%);
+   }
+}
+
+@keyframes scaleIn {
+   from {
+      transform: scale(100%);
+   }
+
+   to {
+      transform: scale(105%);
+   }
+}
+
+@keyframes scaleOut {
+   from {
+      transform: scale(105%);
+   }
+
+   to {
+      transform: scale(100%);
+   }
+}
+
+@keyframes scaleInAndWhite {
+   from {
+      transform: scale(100%);
+      background-color: var(--accentGray200);
+   }
+
+   to {
+      transform: scale(105%);
+      background-color: white;
+   }
+}
+
+@keyframes scaleOutAndWhite {
+   from {
+      transform: scale(105%);
+      background-color: white;
+   }
+
+   to {
+      transform: scale(100%);
+      background-color: var(--accentGray200);
+   }
+}
+
+@keyframes scaleInAndGray {
+   from {
+      transform: scale(100%);
+      background-color: var(--accentGray200);
+   }
+
+   to {
+      transform: scale(105%);
+      background-color: rgb(205, 205, 205);
+   }
+}
+
+@keyframes scaleOutAndGray {
+   from {
+      transform: scale(105%);
+      background-color: rgb(205, 205, 205);
+   }
+
+   to {
+      transform: scale(100%);
+      background-color: var(--accentGray200);
+   }
+}
+
+@keyframes scaleInXl {
+   from {
+      transform: scale(100%);
+   }
+
+   to {
+      transform: scale(110%);
+   }
+}
+
+@keyframes scaleOutXl {
+   from {
+      transform: scale(110%);
+   }
+
+   to {
+      transform: scale(100%);
+   }
+}
+
+@keyframes fadeInFromLeft {
+   from {
+      transform: translateX(-25%);
+      opacity: 0;
+   }
+
+   to {
+      transform: translateX(0%);
+      opacity: 1;
+   }
+}
+
+@keyframes fadeInFromRight {
+   from {
+      transform: translateX(25%);
+      opacity: 0;
+   }
+
+   to {
+      transform: translateX(0%);
+      opacity: 1;
+   }
+}
+
+@keyframes fadeInFromDown {
+   from {
+      transform: translateY(16rem);
+      opacity: 0;
+   }
+
+   to {
+      transform: translateY(8rem);
+      opacity: 1;
+   }
+}
+
+@keyframes hamburgerFadeInFromTop {
+   from {
+      transform: translateY(-25%);
+      opacity: 0;
+   }
+
+   to {
+      transform: translateY(0%);
+      opacity: 1;
+   }
+}
+
+@keyframes fadeInFromTop {
+   from {
+      transform: translateY(-25%);
+      opacity: 0;
+   }
+
+   to {
+      transform: translateY(0%);
+      opacity: 1;
+   }
+}
+
+/* Assigning */
+#home-card {
+   animation: fadeInFromRight 2.5s cubic-bezier(0.2, 0.42, 0.28, 0.99) both
+      500ms;
+}
+
+#hero-titles h1 {
+   animation: fadeInFromLeft 1.25s cubic-bezier(0.2, 0.42, 0.28, 0.99) both;
+   animation-delay: 100ms;
+}
+
+#hero-titles h2 {
+   animation: fadeInFromLeft 1.75s cubic-bezier(0.2, 0.42, 0.28, 0.99) both;
+   animation-delay: 500ms;
+}
+
+#hero-titles a {
+   animation: fadeInFromLeft 3s cubic-bezier(0.2, 0.42, 0.28, 0.99) both;
+   animation-delay: 1500ms;
+}
+
+.statistics-card:hover {
+   animation: scaleInAndGray 0.15s ease-in-out both;
+}
+
+.statistics-card:not(:hover) {
+   animation: scaleOutAndGray 0.15s ease-in-out both;
+}
+
+.social-icons:hover {
+   animation: scaleInXl 0.15s ease-in-out both;
+}
+
+.social-icons:not(:hover) {
+   animation: scaleOutXl 0.15s ease-in-out both;
+}
+
+.fadeInViewFromLeft {
+   animation: fadeInFromLeft 2s cubic-bezier(0.2, 0.42, 0.28, 0.99) both 100ms;
+}
+
+.fadeInViewFromRight {
+   animation: fadeInFromRight 2s cubic-bezier(0.2, 0.42, 0.28, 0.99) both 100ms;
+}
+
+.fadeInViewFromDown {
+   animation: fadeInFromDown 2s cubic-bezier(0.06, 0.78, 0.14, 1) both 500ms;
+}
+
+.fadeInViewFromTop {
+   animation: fadeInFromTop 2s cubic-bezier(0.06, 0.78, 0.14, 1) both 500ms;
+}
+
+.scaleInViewFrom0 {
+   animation: scaleInFrom0 1.5s cubic-bezier(0.06, 0.78, 0.14, 1) both 200ms;
+}
+
+.testimonial-card:hover {
+   animation: scaleInAndWhite 0.15s ease-in-out both;
+}
+
+.testimonial-card:not(:hover) {
+   animation: scaleOutAndWhite 0.15s ease-in-out both;
+}
+
+/* test */
+.hamburgerFadeInViewFromTop {
+   animation: hamburgerFadeInFromTop 1s cubic-bezier(0.06, 0.78, 0.14, 1) both;
+}

@@ -1,0 +1,455 @@
+<!-- This project is designed & developed by Mucha#8047 (Discord) - NOT ASSOCIATED WITH THE BETTERHELP COMPANY WHATSOEVER! -->
+<!-- Website was created by the help of awesome tools/websites, such as: -->
+<!-- https://haikei.app -->
+<!-- https://figma.com -->
+<!-- https://tailwindcss.com -->
+<!-- https://thednp.github.io/kute.js/ -->
+<!-- https://fontawesome.com -->
+<!-- I DO NOT OWN ANY IMAGES/VECTOR GRAPHICS IN THE 'IMG' FOLDER  -->
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link rel="shortcut icon" href="img/betterhelp-favicon.png" type="image/x-icon">
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/media.css">
+      <link rel="stylesheet" href="css/animations.css">
+      <link rel="stylesheet" href="css/hamburger.css">
+      <!-- JS Libraries -->
+      <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
+      <!-- Fonts -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+         rel="stylesheet"
+      />
+      <!-- Tailwind -->
+      <link rel="stylesheet" href="css/main.css">
+      <title>BetterHelp | Affordable Online Therapy</title>
+   </head>
+   <body>
+      <!-- Navbar -->
+      <nav
+         class="fixed z-50 top-0 left-0 w-full items-center bg-white px-5 py-4 shadow-md"
+      >
+         <!-- Flex container -->
+         <div class="flex-row flex items-center justify-between space-x-10">
+            <!-- Logo -->
+            <div>
+               <img id="betterhelp-logo-refresh"
+                  src="img/betterhelp-logo.svg"
+                  class="float-left ml-8 flex h-7 cursor-pointer"
+               />
+            </div>
+            <!-- Links -->
+            <div id="navbar-links" class="hidden space-x-10">
+               <a href="#" class="text-primaryGreen600 text-2xl font-semibold hover:underline underline-offset-2"
+                  >About</a
+               >
+               <a href="#" class="text-primaryGreen600 text-2xl font-semibold hover:underline underline-offset-2"
+                  >Testimonial</a
+               >
+               <a href="#" class="text-primaryGreen600 text-2xl font-semibold hover:underline underline-offset-2"
+                  >Statistics</a
+               >
+               <a href="#" class="text-primaryGreen600 text-2xl font-semibold hover:underline underline-offset-2"
+                  >Pricing</a
+               >
+               <a
+                  href="https://www.betterhelp.com/get-started/"
+                  class="text-primaryGreen600 border-primaryGreen600 rounded-full border-2 border-solid px-4 py-1.5 text-2xl font-semibold hover:bg-primaryGreen600 hover:text-white"
+                  >Get Started</a
+               >
+            </div>
+         </div>
+            
+            <!-- Hamburger Icon -->
+            <button
+               id="menu-btn"
+               class="hamburger inline-block focus:outline-none"
+            >
+               <span class="hamburger-top"></span>
+               <span class="hamburger-middle"></span>
+               <span class="hamburger-bottom"></span>
+            </button>
+
+         <!-- Mobile Menu -->
+         <div id="mobile-menu">
+            <div
+               id="menu"
+               class="absolute right-6 left-6 mt-10 hidden flex-col items-center space-y-6 self-end bg-white py-8 font-bold drop-shadow-md sm:w-1/2 sm:mx-auto w-auto rounded-2xl border-4 border-primaryGreen600"
+            >
+               <a href="#" class="text-primaryGreen600 text-2xl font-semibold hover:border-b-2 hover:border-primaryGreen600 border-b-2 border-white"
+                  >About</a
+               >
+               <a href="#" class="text-primaryGreen600 text-2xl font-semibold hover:border-b-2 hover:border-primaryGreen600 border-b-2 border-white"
+                  >Testimonial</a
+               >
+               <a href="#" class="text-primaryGreen600 text-2xl font-semibold hover:border-b-2 hover:border-primaryGreen600 border-b-2 border-white"
+                  >Statistics</a
+               >
+               <a href="#" class="text-primaryGreen600 text-2xl font-semibold hover:border-b-2 hover:border-primaryGreen600 border-b-2 border-white"
+                  >Pricing</a
+               >
+               <a
+                  href="https://www.betterhelp.com/get-started/"
+                  class="text-primaryGreen600 border-primaryGreen600 rounded-full border-2 border-solid px-4 py-1.5 text-2xl font-semibold hover:bg-primaryGreen600 hover:text-white"
+                  >Get Started</a
+               >
+            </div>
+         </div>
+         </div>
+      </nav>
+
+      <!-- Hero -->
+      <main id="hero" class="h-screen w-screen overflow-hidden">
+         <div
+            id="hero-titles"
+            class="mx-auto mt-40 space-y-10 text-center text-6xl text-white"
+         >
+            <!-- Text -->
+            <h1 class="font-semibold">
+               Online <span class="text-primaryGreen600">Therapy</span>
+            </h1>
+            <h2 class="text-primaryGreen600 italic font-bold text-3xl">
+               Because you deserve to be happy...
+            </h2>
+            <a
+               class="font-400 bg-primaryGreen600 inline-block rounded-full py-4 px-16 text-3xl font-normal hover:bg-transparent border-2 border-primaryGreen600 hover:border-primaryGreen600 hover:text-primaryGreen600"
+               href="https://www.betterhelp.com/get-started/"
+               >Sign up now</a
+            >
+         </div>
+
+            <!-- Absolute positioning -->
+            <img
+               id="home-card"
+               class="absolute hidden"
+               src="img/home-card.png"
+            />
+
+            <!-- Blob 1 -->
+            <svg id="visual" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g transform="translate(434.40246510601344 292.40850364049777)"><path class="blob" id="blob1" d="M103.9 -119.1C129.1 -78.7 140 -39.4 155.7 15.7C171.4 70.7 191.8 141.4 166.6 178.9C141.4 216.4 70.7 220.7 10.4 210.3C-50 200 -99.9 174.9 -124.9 137.4C-149.9 99.9 -150 50 -144 6C-138 -37.9 -125.9 -75.9 -100.9 -116.2C-75.9 -156.6 -37.9 -199.3 0.7 -200C39.4 -200.7 78.7 -159.4 103.9 -119.1" fill="#2F7719"></path></g>
+            
+            <g style="visibility: hidden;" transform="translate(427.5086136778063 295.8105688838134)"><path class="blob" id="blob2" d="M120 -106.3C163.2 -76.8 211.1 -38.4 221.3 10.3C231.6 58.9 204.2 117.9 161 144.7C117.9 171.5 58.9 166.3 -5.9 172.2C-70.7 178 -141.4 195.1 -166.4 168.3C-191.4 141.4 -170.7 70.7 -165.5 5.2C-160.3 -60.3 -170.7 -120.7 -145.7 -150.2C-120.7 -179.7 -60.3 -178.3 -11 -167.4C38.4 -156.4 76.8 -135.8 120 -106.3" fill="#2F7719"></path></g></svg>
+
+            <script>
+               const tween = KUTE.fromTo(
+                  '#blob1',
+                  { path: '#blob1' },
+                  { path: '#blob2' },
+                  { repeat: 999, duration: 8000, yoyo: true }
+               )
+               
+               tween.start();
+            </script>
+      </main>
+
+      <!-- About  us -->
+      <section id="about-section">
+         <div id="about-grid" class="mx-auto md:mt-20 mt-14 md:space-y-16 space-y-10 text-center grid grid-rows-2 grid-cols-2 text-6xl sm:mb-0 mb-40">
+            <h1 id="about-title" class="font-semibold cursor-pointer col-span-4">About us</h1>
+            <p class="row-start-2 fadeInViewFromLeftObserver opacity-0 text-center col-span-2 md:text-4xl text-3xl"><span class="text-primaryGreen600">BetterHelp</span>.com is a service for affordable online therapy sessions.<br><br>
+
+               For some people <span class="text-primaryGreen600">face-to-face</span> therapy is not convenient or comfortable,
+               for others that’s what they prefer. Here, you have the <span class="text-primaryGreen600">choice to pick</span>
+               whatever you are satisfied with.<br><br>
+
+               <span class="text-primaryGreen600">Sign up</span>, <span class="text-primaryGreen600">pick your plan</span> and <span class="text-primaryGreen600">find a therapist</span> that you need ❤️</p>
+               <img class="h-80 row-start-2 hidden fadeInViewFromRightObserver opacity-0" src="img/vector-help-1.svg">
+         </div>
+      </section>
+
+      <!-- Testimonial -->
+      <section id="testimonial-section" class="bg-primaryGreen700 fadeInViewFromTopObserver opacity-0 relative w-screen h-screen md:mt-40 mt-0">
+         <img id="testimonial-bg-vector-1" class="absolute" src="img/testimonial-bg-vector.svg">
+         <div>
+            <h1 id="testimonial-title" class="font-semibold cursor-pointer col-span-4 text-center text-6xl text-white">Testimonial</h1>
+            <div id="testimonial-grid" class="grid lg:grid-col-4 grid-col-1 mt-20 mx-20 gap-10 justify-center">
+               <!-- Testimonial grid 1 - D. Vonschmidt -->
+               <div class="testimonial-card p-6 pt-4 lg:block hidden bg-accentGray200 rounded-3xl lg:col-start-1 lg:row-span-2 relative">
+                  <div class="space-x-4">                  
+                     <img class="inline w-10" src="img/vonschmidt-pfp.png">
+                     
+                     <div class="inline space-x-4">
+                        <h4 class="inline text-sm">D. Vonschmidt</h4>
+                        <h5 id="vonschmidt-license" class="hidden italic text-accentGray500 text-xs">LMHC</h5>
+                     </div>
+                  </div>
+
+                  <div>
+                     <p class="text-left mt-2 mb-12">
+                        Denise is amazing. Even though we struggle with timezone issues, whatever time I can   spend with her virtually is so helpful. She’s my safe place and I absolutely love  discussing things with her. Very grateful for this relationship.
+                     </p>
+                     <div class="absolute bottom-0 mb-5">
+                        <h5 class="italic text-accentGray500 text-xs">BetterHelp review #383505</h5>
+                        <h5 class="italic text-accentGray500 text-xs">Date of review • November 26, 2022</h5>
+                     </div>
+                  </div>
+               </div>
+               <!-- Testimonial grid 2 - J. Jeffrey -->
+               <div class="testimonial-card p-6 pt-4 bg-accentGray200 rounded-3xl hidden lg:block lg:col-start-2 lg:col-span-2 lg:row-start-1">
+                     <div class="space-x-4">     
+                     <img class="inline w-10" src="img/quote.png">             
+                     <img class="inline w-10" src="img/jeffrey-pfp.png">
+                     
+                     <div class="inline space-x-4">
+                        <h4 class="inline text-sm">J. Jeffrey</h4>
+                        <h5 class="inline italic text-accentGray500 text-xs">LICSW</h5>
+                     </div>
+                  </div>
+
+                  <div>
+                     <p class="text-left mt-2">
+                        Jeffrey has been a huge help with talking me through my current transitional situation in life. He has also been helping me recognize patterns in my anxiety and panic issues, which I've been noticing less of since I started talking with him.
+                     </p>
+                     <div class="flex mt-4 justify-between w-full">
+                        <h5 class="inline italic text-accentGray500 text-xs">BetterHelp review #383504</h5>
+                        <h5 class="inline italic text-accentGray500 text-xs">Date of review • November 26, 2022</h5>
+                        <img class="inline w-6 rotate-180" src="img/quote.png">
+                     </div>
+                  </div>
+               </div>
+               <!-- Testimonial grid 3 - M. Libby -->
+               <div class="testimonial-card p-6 pt-4 lg:block hidden bg-accentGray200 rounded-3xl col-start-4 relative">
+                     <div class="space-x-4">     
+                     <img class="inline w-10" src="img/libby-pfp.png">
+                     
+                     <div class="inline space-x-4">
+                        <h4 class="inline text-sm">M. Libby</h4>
+                        <h5 id="libby-license" class="hidden italic text-accentGray500 text-xs">LPC</h5>
+                     </div>
+                  </div>
+
+                  <div>
+                     <p class="text-left mt-2">
+                        She’s amazing!!
+                     </p>
+                     <div class="absolute bottom-0 mb-5">
+                        <h5 class="italic text-accentGray500 text-xs">BetterHelp review #383207</h5>
+                        <h5 class="italic text-accentGray500 text-xs">Date of review • November 24, 2022</h5>
+                     </div>
+                  </div>   
+               </div>
+               <!-- Testimonial grid 4 - B. Trimms -->
+               <div class="testimonial-card lg:block hidden p-6 pt-4 bg-accentGray200 rounded-3xl col-start-2 col-span-1 relative">
+                     <div class="space-x-4">     
+                     <img class="inline w-10" src="img/trimms-pfp.png">
+                     
+                     <div class="inline space-x-4">
+                        <h4 class="inline text-sm">B. Trimms</h4>
+                        <h5 id="trimms-license" class="hidden italic text-accentGray500 text-xs">LCSW</h5>
+                     </div>
+                  </div>
+
+                  <div>
+                     <p class="text-left mt-2">
+                        Pretty good so far
+                     </p>
+                     <div class="absolute bottom-0 mb-5">
+                        <h5 class="italic text-accentGray500 text-xs">BetterHelp review #383506</h5>
+                        <h5 class="italic text-accentGray500 text-xs">Date of review • November 26, 2022</h5>
+                     </div>
+                  </div>
+               </div>
+               <!-- Testimonial grid 5 - M. Garibaldi -->
+               <div class="testimonial-card p-6 bg-accentGray200 lg:block hidden rounded-3xl col-start-3 col-span-2 relative">
+                     <div class="space-x-4">           
+                     <img class="inline w-10" src="img/quote.png">       
+                     <img class="inline w-10" src="img/garibaldi-pfp.png">
+                     
+                     <div class="inline space-x-4">
+                        <h4 class="inline text-sm">M. Garibaldi</h4>
+                        <h5 class="inline italic text-accentGray500 text-xs">LMFT</h5>
+                     </div>
+                  </div>
+
+                  <div>
+                     <p class="text-left mt-2 mb-6">
+                        Thank you so much for all your hard work with me! I truly appreciate the evening conversations and working with my schedule! I cannot wait to end on a fantastic note!
+                     </p>
+                     <div class="flex justify-between w-full">
+                        <h5 class="inline italic text-accentGray500 text-xs">BetterHelp review #383504</h5>
+                        <h5 class="inline italic text-accentGray500 text-xs">Date of review • November 26, 2022</h5>
+                        <img class="inline w-6 rotate-180" src="img/quote.png">
+                     </div>
+                  </div>
+               </div>
+
+               <!-- TESTIMONIAL RESPONSIVE -->
+               <!-- Vonschmidt -->
+                  <div id="testimonial-vonschmidt-mobile" class="testimonial-card p-6 pt-4 bg-accentGray200 block lg:hidden rounded-3xl col-span-4 row-start-">
+                     <div class="space-x-4">     
+                     <img class="testimonial-grid-quote-mobile inline w-10" src="img/quote.png">             
+                     <img class="inline w-10" src="img/vonschmidt-pfp.png">
+                     
+                     <div class="inline space-x-4">
+                        <h4 class="inline text-sm">D. Vonschmidt</h4>
+                        <h5 class="inline italic text-accentGray500 text-xs">LMHC</h5>
+                     </div>
+                  </div>
+
+                  <div>
+                     <p class="text-left mt-2">
+                        Denise is amazing. Even though we struggle with timezone issues, whatever time I can spend with her virtually is so helpful. She’s my safe place and I absolutely love discussing things with her. Very grateful for this relationship. 
+                     </p>
+                     <div class="flex mt-4 justify-between w-full">
+                        <h5 class="inline italic text-accentGray500 text-xs">BetterHelp review #383505</h5>
+                        <h5 class="inline italic text-accentGray500 text-xs">Date of review • November 26, 2022</h5>
+                        <img class="testimonial-grid-quote-mobile inline w-6 rotate-180" src="img/quote.png">
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Jeffrey -->
+                  <div id="testimonial-grid-jeffrey-mobile" class="testimonial-card testimonial-grid-mobile p-6 pt-4 bg-accentGray200 block lg:hidden rounded-3xl col-span-4 row-start-">
+                     <div class="space-x-4">     
+                     <img class="testimonial-grid-quote-mobile w-10" src="img/quote.png">             
+                     <img id="testimonial-jeffrey-pfp-mobile" class="inline w-10" src="img/jeffrey-pfp.png">
+                     
+                     <div class="inline space-x-4">
+                        <h4 id="testimonial-jeffrey-name" class="inline text-sm">J. Jeffrey</h4>
+                        <h5 id="testimonial-jeffrey-license-mobile" class="inline italic text-accentGray500 text-xs">LICSW</h5>
+                     </div>
+                  </div>
+
+                  <div>
+                     <p class="text-left mt-2">
+                        Jeffrey has been a huge help with talking me through my current transitional situation in life. He has also been helping me recognize patterns in my anxiety and panic issues, which I've been noticing less of since I started talking with him.  
+                     </p>
+                     <div class="flex mt-4 justify-between w-full">
+                        <h5 id="testimonial-review-mobile" class="inline italic text-accentGray500 text-xs">BetterHelp review #383504</h5>
+                        <h5 id="testimonial-date-mobile" class="inline italic text-accentGray500 text-xs">Date of review • November 26, 2022</h5>
+                        <img class="testimonial-grid-quote-mobile w-6 rotate-180" src="img/quote.png">
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Garibaldi -->
+                  <div id="testimonial-garibaldi-mobile" class="testimonial-card p-6 pt-4 bg-accentGray200 block lg:hidden rounded-3xl col-span-4 row-start-">
+                     <div class="space-x-4">     
+                     <img class="testimonial-grid-quote-mobile w-10" src="img/quote.png">             
+                     <img id="testimonial-garibaldi-pfp-mobile" class="inline w-10" src="img/garibaldi-pfp.png">
+                     
+                     <div class="inline space-x-4">
+                        <h4 class="inline text-sm">M. Garibaldi</h4>
+                        <h5 class="inline italic text-accentGray500 text-xs">LMFT</h5>
+                     </div>
+                  </div>
+
+                  <div>
+                     <p class="text-left mt-2">
+                        Thank you so much for all your hard work with me! I truly appreciate the evening conversations and working with my schedule! I cannot wait to end on a fantastic note! 
+                     </p>
+                     <div class="flex mt-4 justify-between w-full">
+                        <h5 class="inline italic text-accentGray500 text-xs">BetterHelp review #383504</h5>
+                        <h5 class="inline italic text-accentGray500 text-xs">Date of review • November 26, 2022</h5>
+                        <img class="testimonial-grid-quote-mobile w-6 rotate-180" src="img/quote.png">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <img id="testimonial-bg-vector-2" class="absolute bottom-0 left-0" src="img/testimonial-bg-vector.svg">
+      </section>
+
+      <!-- Statistics -->
+      <section id="statistics-section">
+         <div class="mt-60">
+            <h1 id="statistics-title" class="font-semibold text-6xl scaleInFrom0Observer text-center">Statistics</h1>
+            <div id="statistics-flex-cards-container" class="flex lg:flex-row flex-col justify-between mt-20 lg:space-y-0 space-y-20 text-3xl text-center">
+               <div class="statistics-card w-10/12 mx-auto lg:ml-4 lg:mr-0 lg:w-3/12 bg-accentGray200 rounded-3xl px-4 py-6">
+                  <img class="mx-auto w-32 -translate-y-16" src="img/statistics-brain.png">
+                  <p class="-translate-y-8">
+                     Mental illnesses are among the <span class="text-primaryGreen600">most common health conditions</span> in the United States. More than <span class="text-primaryGreen600">50%</span> will be diagnosed with a mental illness or disorder at some point <span class="text-primaryGreen600"></span>in their lifetime.
+                  </p>
+               </div>
+               <div class="statistics-card w-10/12 mx-auto lg:ml-4 lg:mr-0 lg:w-3/12 bg-accentGray200 rounded-3xl px-4 py-6">
+                  <img class="mx-auto w-32 -translate-y-16" src="img/statistics-heart.png">
+                  <p class="-translate-y-8">
+                     Nearly <span class="text-primaryGreen600">800,000</span> people die by <span class="text-primaryGreen600">suicide</span> in the world <span class="text-primaryGreen600">each year</span>, which is roughly one death every 40 seconds. Suicide is the <span class="text-primaryGreen600">2nd leading cause of death</span> in the world for those aged 15-24 years.
+                  </p>
+               </div>
+               <div class="statistics-card w-10/12 mx-auto lg:ml-4 lg:mr-0 lg:w-3/12 bg-accentGray200 rounded-3xl px-4 py-6">
+                  <img class="mx-auto w-32 -translate-y-20" src="img/statistics-thumb.png">
+                  <p class="-translate-y-8">About <span class="text-primaryGreen600">75%</span> of people who enter psychotherapy show some <span class="text-primaryGreen600">benefit</span> from it. Psychotherapy has been shown to <span class="text-primaryGreen600">improve emotions</span> and behaviors and to be linked with <span class="text-primaryGreen600">positive changes</span> in the brain and body.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing" class="mt-60 md:mt-80">
+         <img id="pricing-wave" src="img/wave.svg" class="overflow-hidden translate-y-2 w-screen">
+         <div class="w-screen h-screen text-center text-6xl relative bg-primaryGreen700 text-white">
+            <img class="fadeInViewFromLeftObserver2 opacity-0 h-44 hidden lg:block z-10 lg:left-10 absolute xl:left-30 xl:h-56 top-28" src="img/vector-help-2.svg">
+            <img class="fadeInViewFromRightObserver2 opacity-0 h-44 hidden lg:block z-10 lg:right-10 absolute xl:right-30 xl:h-56 top-28" src="img/vector-help-3.svg">
+            <h1 id="pricing-title" class="translate-y-16 cursor-pointer">Pricing</h1>
+            <p class="text-4xl opacity-0 translate-y-32 fadeInViewFromDownObserver">
+               <span class="text-primaryGreen400">$60 - $90 weekly</span><br>
+               ($240 - $360 per month)<br>
+               <span class="text-primaryGreen400">US & International</span><br><br>
+
+               Does <span class="text-primaryGreen400">not accept insurance</span><br><br>
+
+               No psychiatric care or medication management<br><br>
+
+               <span class="text-primaryGreen400">Live video</span>, <span class="text-primaryGreen400">phone</span> or <span class="text-primaryGreen400">text-based</span> therapy sessions<br><br>
+            </p>
+         </div>
+      </section>
+      
+      <footer id="footer-section">
+         <div id="footer-container" class="bg-bgBlue900 text-white text-2xl text-left px-8 pt-10 pb-4">
+            <div class="relative h-0">
+               <img id="betterhelp-logo-redirect" src="img/betterhelp-logo.svg" class="h-7 cursor-pointer ">
+               <i class="cursor-pointer social-icons fa-brands fa-pinterest fa-xl text-white absolute left-0 top-0 mt-16"></i>
+               <i class="cursor-pointer social-icons fab fa-facebook fa-xl text-white absolute left-0 top-0 ml-14 mt-16"></i>
+               <i class="cursor-pointer social-icons fa-brands fa-twitter fa-xl text-white absolute left-0 top-0 ml-28 translate-x-1 mt-16"></i>
+            </div>
+            <a
+                  href="https://www.betterhelp.com/get-started/"
+                  class="text-primaryGreen400 border-primaryGreen400 rounded-full border-2 border-solid px-4 py-1.5 text-2xl font-semibold hover:text-white hover:border-white float-right -translate-y-2"
+                  >Get Started</a
+            >
+            <div id="footer-nav-flex" class="lg:mx-96 sm:mx-40 mt-14 flex flex-row justify-between">
+               <div class="space-y-2 flex flex-col">
+               <a class="hover:underline underline-offset-4" href="#">Home</a>
+               <a class="hover:underline underline-offset-4" href="#">About</a>
+               <a class="hover:underline underline-offset-4" href="#">Testimonial</a>
+               <a class="hover:underline underline-offset-4" href="#">Statistics</a>
+               <a class="hover:underline underline-offset-4" href="#">Pricing</a>
+               </div>
+
+               <div class="border-white border-l-2"></div>
+
+               <div class="space-y-2 flex flex-col">
+               <a class="hover:underline underline-offset-4" href="https://www.betterhelp.com/faq/">FAQ</a>
+               <a class="hover:underline underline-offset-4" href="https://www.betterhelp.com/privacy/">Privacy Policy</a>
+               <a class="hover:underline underline-offset-4" href="https://www.betterhelp.com/contact/">Contact</a>
+               </div>
+            </div>
+
+            <div class="flex-row flex justify-between mt-16">
+            <h6 id="mucha-disclaimer" class="italic inline text-accentGray500 cursor-pointer text-sm opacity-50">Designed and developed by Mucha, not actually associated with BetterHelp company</h6>
+            <h6 class="italic inline text-accentGray500 text-sm float-right">Copyright &copy; 2022, All Rights Reserved</h6>
+            </div>
+         </div>
+      </footer>
+      <script src="js/app.js"></script>
+      <script src="js/hamburger.js"></script>
+      <script src="js/animation_in_view.js"></script>
+   </body> 
+</html>

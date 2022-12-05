@@ -1,0 +1,72 @@
+body {
+   font-family: "Lato", sans-serif;
+   font-weight: 400;
+   letter-spacing: 0.02em;
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   overflow-x: hidden;
+}
+
+/* Hero */
+#hero {
+   background: linear-gradient(67.49deg, #64a750 -11.29%, #d7eed0 130.24%);
+   border-bottom-right-radius: 8rem;
+}
+
+#home-card {
+   left: 55%;
+   top: 15%;
+}
+
+.blob {
+   position: absolute;
+   top: 100%;
+   left: 0;
+   overflow: hidden;
+   opacity: 0.25;
+}
+
+/* About us */
+#about-section,
+#statistics-section {
+   width: 90vw;
+   margin-inline: auto;
+}
+
+#about-grid {
+   grid-template-rows: 4rem 38rem;
+   margin-inline: auto;
+}
+
+#about-grid img {
+   transform: translateX(4rem);
+}
+
+/* Testimonial */
+#testimonial-bg-vector-1 {
+   /* transform: translateY(-75%) scale(110%); */
+   transform: translateY(-75%);
+   z-index: -1;
+}
+
+#testimonial-bg-vector-2 {
+   /* transform: translateY(75%) scale(110%) rotate(180deg); */
+   transform: translateY(75%) rotate(180deg);
+   z-index: -1;
+}
+
+#testimonial-grid {
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+}
+
+/* Pricing */
+/* #pricing-wave {
+   transform: scale(255%) translateY(-22.5%);
+} */
+
+/* Footer */
+#footer-container {
+   height: 25rem;
+}

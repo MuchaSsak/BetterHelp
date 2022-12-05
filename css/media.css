@@ -1,0 +1,229 @@
+@media (min-width: 1034px) {
+   /* Navbar */
+   #navbar-links {
+      display: inline;
+   }
+
+   /* Hero */
+   #hero-titles {
+      text-align: left;
+      margin-top: 10rem;
+      margin-left: 7rem;
+   }
+
+   #home-card {
+      display: inline;
+   }
+
+   /* Hamburger Menu */
+   #menu-btn {
+      display: none;
+   }
+
+   #mobile-menu {
+      display: none;
+   }
+
+   /* Blob */
+   .blob {
+      transform: translateX(-35%);
+   }
+}
+
+@media (max-width: 1823px) {
+   #home-card {
+      height: 25rem;
+      margin-left: 5rem;
+   }
+}
+
+@media (max-width: 1568px) {
+   #home-card {
+      height: 25rem;
+      margin-left: 0;
+   }
+}
+
+@media (max-width: 1428px) {
+   #home-card {
+      height: 25rem;
+      margin-left: -3rem;
+   }
+}
+
+@media (max-width: 1299px) {
+   #home-card {
+      height: 22.5rem;
+      margin-top: 2rem;
+      margin-left: -2rem;
+   }
+}
+
+@media (max-width: 1165px) {
+   #home-card {
+      height: 20rem;
+      margin-top: 2rem;
+      margin-left: 0rem;
+   }
+}
+
+@media (min-width: 1196px) {
+   /* About us */
+   #about-grid img {
+      display: block;
+   }
+
+   #about-grid p {
+      text-align: left;
+   }
+}
+
+@media (max-width: 375px) {
+   /* About us */
+   #about-grid p {
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+   }
+
+   #about-section {
+      margin-bottom: 6rem;
+   }
+}
+
+/* Testimonial */
+@media (max-height: 790px) {
+   #testimonial-section {
+      margin-top: 10rem;
+   }
+}
+@media (min-width: 1300px) {
+   /* Testimonial grid 1 - Vonschmidt */
+   #vonschmidt-license {
+      display: inline;
+   }
+}
+
+@media (min-width: 1089px) {
+   /* Testimonial grid 3 - Libby */
+   #libby-license {
+      display: inline;
+   }
+}
+
+@media (min-width: 1162px) {
+   /* Testimonial grid 3 - Trimms */
+   #trimms-license {
+      display: inline;
+   }
+}
+
+@media (max-width: 325px) {
+   #testimonial-title {
+      font-size: 3rem;
+   }
+
+   #testimonial-jeffrey-name,
+   #testimonial-grid-jeffrey-mobile {
+      font-size: 0.8rem;
+   }
+
+   #testimonial-review-mobile,
+   #testimonial-date-mobile {
+      font-size: 0.6rem;
+   }
+}
+
+@media (max-width: 380px) {
+   #testimonial-jeffrey-license-mobile {
+      display: none;
+   }
+}
+
+@media (min-width: 567px) {
+   .testimonial-grid-quote-mobile {
+      display: inline;
+   }
+}
+
+@media (max-width: 566px) {
+   .testimonial-grid-quote-mobile {
+      display: none;
+   }
+
+   #testimonial-jeffrey-pfp-mobile,
+   #testimonial-garibaldi-pfp-mobile {
+      margin-left: 0;
+   }
+}
+
+@media (max-width: 785px) {
+   #testimonial-vonschmidt-mobile {
+      display: none;
+   }
+}
+
+@media (max-width: 465px) {
+   #testimonial-garibaldi-mobile {
+      display: none;
+   }
+   #testimonial-grid-jeffrey-mobile {
+      margin-top: 6rem;
+   }
+   #testimonial-title {
+      transform: translateY(6rem);
+   }
+}
+
+/* Statistics */
+@media (min-width: 1653px) {
+   #statistics-title {
+      margin-top: 20rem;
+   }
+}
+
+/* Footer */
+@media (max-width: 903px) {
+   #footer-nav-flex {
+      /* margin-inline: 15rem; */
+      flex-direction: column;
+      margin-inline: 0rem;
+      margin-top: 9rem;
+      border-left: 1px solid white;
+      text-align: left;
+      font-size: 1rem;
+      flex-wrap: wrap;
+   }
+
+   #footer-nav-flex div.flex-col:nth-child(1),
+   #footer-nav-flex div.flex-col:nth-child(3) {
+      flex-direction: row;
+   }
+
+   #footer-nav-flex div.flex-col a {
+      margin: 0.25rem 1rem;
+   }
+}
+
+@media (max-width: 659px) {
+   #footer-nav-flex {
+      margin-inline: 0;
+   }
+
+   #footer-nav-flex div.flex-col a {
+      margin: 0.25rem 0.5rem;
+   }
+}
+
+@media (max-width: 445px) {
+   #footer-container a.float-right {
+      font-size: 1rem;
+      padding-top: 0.15rem;
+      padding-bottom: 0.15rem;
+      padding-inline: 0.75rem;
+   }
+
+   #footer-container {
+      padding-inline: 1rem;
+      padding-top: 1.75rem;
+   }
+}
